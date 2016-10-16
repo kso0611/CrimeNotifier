@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical"
+    tools:context="dgu.com.myapplication.MainActivity">
+<LinearLayout
+    android:layout_margin="45dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:text="성범죄 알림"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_bg_focused"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:padding="5dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_gps"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="경의중앙선 용문행 331125 열차 3-3칸"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_bg_focused"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="신고 시간 : 2016년 10월 11일 16:27:32"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:text="40대 중년 남성이 만취 상태로 몰래 카메라를 촬영하고 있어요!!!"
+        android:id="@+id/editText"
+        android:textSize="25dp"
+        android:background="@drawable/round_bg_focused"
+        />
+
+    <Button
+        android:text="확인"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_bg"
+        />
+</LinearLayout>
+</LinearLayout>
