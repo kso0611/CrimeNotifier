@@ -1,88 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:orientation="vertical"
-    >
-
-    <TextView
-        android:text="신고 접수"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-         />
-
+    android:layout_width="match_parent" >
     <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal"
-        android:background="@drawable/round_bg_focused"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
         >
-    <ImageView
-        android:layout_width="35dp"
-        android:padding="5dp"
-        android:layout_height="35dp"
-        android:src="@drawable/icon_gps"
-        />
+
         <TextView
-            android:layout_width="wrap_content"
+            android:text="신고 접수"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="현재 위치 자동 탐색 중..."
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round_bg_focused"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:padding="5dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_gps"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="현재 위치 자동 탐색 중..."
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:text=""
+            android:hint="신고 내용을 입력하세요"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="@drawable/round_bg"
+            />
+
+        <Button
+            android:text="신고하기"
+            android:id="@+id/notify"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg"
+            />
+
+        <Button
+            android:text="취소"
+            android:id="@+id/cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/round_bg_focused"
+            />
     </LinearLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:inputType="textPersonName"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-
-        android:text=""
-        android:hint="신고 내용을 입력하세요"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:background="@drawable/round_bg"
-        />
-
-    <Button
-        android:text="신고하기"
-        android:id="@+id/notify"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:textColor="@android:color/darker_gray"
-        android:background="@drawable/button_bg"
-        />
-
-    <Button
-        android:text="취소"
-        android:id="@+id/cancel"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:textColor="@android:color/darker_gray"
-        android:background="@drawable/round_bg_focused"
-        />
-</LinearLayout>
+</ScrollView>
