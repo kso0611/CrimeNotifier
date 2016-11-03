@@ -51,7 +51,7 @@ import java.util.Locale;
  *
  * RECOBackgroundMonitoringService는 백그라운드에서 monitoring을 수행하며, 특정 region 내부로 진입한 경우 백그라운드 상태에서 ranging을 수행합니다.
  */
-public class RecoBackgroundRangingService extends Service implements RECORangingListener, RECOMonitoringListener, RECOServiceConnectListener{
+public class MyRecoBackgroundRangingService extends Service implements RECORangingListener, RECOMonitoringListener, RECOServiceConnectListener{
     /**
      * We recommend 1 second for scanning, 10 seconds interval between scanning, and 60 seconds for region expiration time.
      * 1초 스캔, 10초 간격으로 스캔, 60초의 region expiration time은 당사 권장사항입니다.
@@ -272,7 +272,7 @@ public class RecoBackgroundRangingService extends Service implements RECORanging
         Log.i("BackRangingService", "popupNotification()");
         String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.KOREA).format(new Date());
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this).setSmallIcon(R.drawable.ic_launcher)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this).setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle(msg + " " + currentTime)
                 .setContentText(msg);
 

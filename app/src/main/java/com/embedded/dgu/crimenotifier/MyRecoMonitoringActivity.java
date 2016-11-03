@@ -45,7 +45,7 @@ import java.util.Locale;
  *
  * RECOMonitoringActivity 클래스는 foreground 상태에서 monitoring을 수행합니다.
  */
-public class RecoMonitoringActivity extends RecoActivity implements RECOMonitoringListener {
+public class MyRecoMonitoringActivity extends RecoActivity implements RECOMonitoringListener {
     private RecoMonitoringListAdapter mMonitoringListAdapter;
     private ListView mRegionListView;
 
